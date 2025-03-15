@@ -1,6 +1,6 @@
-## UnBot for AzerothCore Module
+## UnBot for BfaCore 
 
-一个基于 UnBot 插件修改的机器人控制插件，作为 AzerothCore 机器人模组的配套插件，方便玩家控制机器人
+一个基于 UnBot 修改的，适配 BfaCore（版本8.3.7） 的机器人控制插件，方便控制机器人（基于Playerbot mod）。
 
 目前仅对中文客户端有较好支持。
 
