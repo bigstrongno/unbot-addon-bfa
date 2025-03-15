@@ -395,9 +395,9 @@ function UnBotInspectHeadSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -412,9 +412,9 @@ function UnBotInspectNeckSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -429,9 +429,9 @@ function UnBotInspectShoulderSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -446,9 +446,9 @@ function UnBotInspectBackSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -463,9 +463,9 @@ function UnBotInspectChestSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -480,9 +480,9 @@ function UnBotInspectShirtSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -497,9 +497,9 @@ function UnBotInspectTabardSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -514,9 +514,9 @@ function UnBotInspectWristSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -531,9 +531,9 @@ function UnBotInspectHandsSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -548,9 +548,9 @@ function UnBotInspectWaistSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -565,9 +565,9 @@ function UnBotInspectLegsSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -582,9 +582,9 @@ function UnBotInspectFeetSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -599,9 +599,9 @@ function UnBotInspectFinger0Slot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -616,9 +616,9 @@ function UnBotInspectFinger1Slot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -633,9 +633,9 @@ function UnBotInspectTrinket0Slot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -650,9 +650,9 @@ function UnBotInspectTrinket1Slot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -667,9 +667,9 @@ function UnBotInspectMainHandSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -684,9 +684,9 @@ function UnBotInspectSecondaryHandSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end
@@ -701,9 +701,9 @@ function UnBotInspectRangedSlot_OnMouseUp(...)
 		return;
 	end
 
-	if (arg1 == "LeftButton") then
+	if (button == "LeftButton") then
 		UnBotInspectSlotShowItemChange(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
-	elseif (arg1 == "RightButton") then
+	elseif (button == "RightButton") then
 		UnBotInspectSlotUnItem(dstFrame, GetInventoryItemLink(InspectFrame.unit, dstFrame:GetID()));
 	end
 end

@@ -42,7 +42,8 @@
 				self:RegisterEvent("RAID_TARGET_UPDATE");
 			</OnLoad>
 			<OnEvent>
-				if (event == "ADDON_LOADED" and arg1 == "UnBot") then
+				--DisplayInfomation("xhf。。。。。。。。。OnEvent,select(1,...): "..tostring(select(1,...)));
+				if (event == "ADDON_LOADED" and select(1,...) == "UnBot") then
 					InitializeUnBotFrame();
 					UnBotLogInfo = {};
 					self.DelayInitTime = GetTime() + 3;

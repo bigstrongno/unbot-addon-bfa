@@ -39,7 +39,7 @@
 		<OnClick>
 		</OnClick>
 		<OnMouseUp>
-			if ( arg1 == "LeftButton" or arg1 == "RightButton" ) then
+			if ( button == "LeftButton" or button == "RightButton" ) then
 				if (self.data ~= nil) then
 					StrategyOption_OnClick(self, self.strategyFrame, self.use, self.targetName, self.strategyType, self.data[1]);
 				end

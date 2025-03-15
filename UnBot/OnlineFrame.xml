@@ -35,7 +35,7 @@
 			end
 		</OnClick>
 		<OnMouseUp>
-			if ( arg1 == "RightButton" ) then
+			if ( button == "RightButton" ) then
 				if (self.unit ~= nil and self.unit[1] ~= nil) then
 					if (UnitInParty(self.unit[1]) == nil and UnitInRaid(self.unit[1]) == nil) then
 						InviteUnit(self.unit[1]);

@@ -91,7 +91,7 @@ end
 
 
 function InitializeUnBotFrame()
-	DisplayInfomation("开始初始化机器人控制器");
+	DisplayInfomation("xhf开始加载 开始初始化机器人控制器");
 	if(UnBotFrame.Inited == true) then
 		return;
 	end
@@ -100,6 +100,7 @@ function InitializeUnBotFrame()
 	if (UnBotCommandBarConfig == nil) then
 		UnBotCommandBarConfig = {};
 	end
+
 	for i=1, 10 do
 		UpdateGroupButtonActive(i,false);
 	end
@@ -340,6 +341,7 @@ function CaseNormalWhisperMsg(name, info)
 end
 
 function SubCommandButton_OnLeftClick(index)
+	DisplayInfomation("xhf...SubCommandButton_OnLeftClick: "..UnitName("target"));
 	if (index > 0) then
 		if (UnBotExecuteCommand[index] == nil or UnBotExecuteCommand[index] == "") then
 			return;
@@ -370,7 +372,11 @@ function SubCommandButton_OnLeftClick(index)
 			-- if (not IsRealPartyLeader()) then
 			-- 	DisplayInfomation("你当前不是队伍领袖。");
 			-- else
-			SendChatMessage(UnBotExecuteCommand[index], "WHISPER", nil, targetName);
+			local toDelName = "";
+			if (index == 86) then
+				toDelName=targetName;
+			end
+			SendChatMessage(UnBotExecuteCommand[index].." "..toDelName, "WHISPER", nil, targetName);
 			-- end
 		elseif (UnBotCommandType[index] == 3) then
 			local targetName = UnitName("target");

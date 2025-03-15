@@ -34,7 +34,7 @@
 				GameTooltip:Hide();
 			</OnLeave>
 			<OnMouseUp>
-				if ( arg1 == "RightButton" ) then
+				if ( button == "RightButton" ) then
 					if (self.groupIndex > 0) then
 						local subFrame = _G["UnBotSubFrame"..tostring(self.groupIndex)];
 						if(subFrame) then
@@ -78,7 +78,7 @@
 				GameTooltip:Hide();
 			</OnLeave>
 			<OnMouseUp>
-				if ( arg1 == "RightButton" ) then
+				if ( button == "RightButton" ) then
 					ResetCommandToAction(self,self.comIndex,true);
 				end
 			</OnMouseUp>
