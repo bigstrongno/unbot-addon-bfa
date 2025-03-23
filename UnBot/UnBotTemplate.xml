@@ -13,7 +13,7 @@
 
 	<Button name="UnBotCommandButtonTemplate" virtual="true">
 		<Size>
-			<AbsDimension y="32" x="32"/>
+			<AbsDimension y="24" x="24"/>
 		</Size>
 		<Scripts>
 			<OnShow>
@@ -52,13 +52,15 @@
 				end
 			</OnMouseUp>
 			<OnClick>
+				--DisplayInfomation("点击了begin" .. self.comIndex);
 				SubCommandButton_OnLeftClick(self.comIndex);
+				--DisplayInfomation("点击了end" .. self.comIndex);
 			</OnClick>
 		</Scripts>
 	</Button>
 	<Button name="UnBotCommandSubButtonTemplate" virtual="true">
 		<Size>
-			<AbsDimension y="32" x="32"/>
+			<AbsDimension y="24" x="24"/>
 		</Size>
 		<Anchors>
 			<Anchor point="BOTTOMLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
@@ -83,6 +85,7 @@
 				end
 			</OnMouseUp>
 			<OnClick>
+				--DisplayInfomation("点击了" .. self.comIndex);
 				SubCommandButton_OnLeftClick(self.comIndex);
 			</OnClick>
 		</Scripts>

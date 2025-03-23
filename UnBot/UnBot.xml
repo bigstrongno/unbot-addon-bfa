@@ -2,11 +2,11 @@
 ..\FrameXML\UI.xsd">
 	<Frame name="UnBotFrame" movable="true" enableMouse="true" toplevel="true" frameStrata="LOW" virtual="false" hidden="false">
 		<TitleRegion setAllPoints="true"/>
-		<Size x="410" y="42"/>
+		<Size x="300" y="34"/>
 		<Anchors>
 			<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT">
 				<Offset>
-					<AbsDimension x="-230" y="100"/>
+					<AbsDimension x="-210" y="100"/>
 				</Offset>
 			</Anchor>
 		</Anchors>
@@ -59,8 +59,8 @@
 			</OnUpdate>
 		</Scripts>
 		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
-			<EdgeSize val="16"/>
-			<TileSize val="16"/>
+			<EdgeSize val="10"/>
+			<TileSize val="10"/>
 			<BackgroundInsets left="5" right="5" top="5" bottom="5"/>
 			<Color r="1.0" g="1.0" b="1.0" a="0.2"/>
 		</Backdrop>
@@ -81,7 +81,7 @@
 			<Button name="UnBotCommandButton2" inherits="UnBotCommandButtonTemplate" parent="UnBotFrame">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
-						<Offset> <AbsDimension y="-5" x="40"/> </Offset>
+						<Offset> <AbsDimension y="-5" x="30"/> </Offset>
 					</Anchor>
 				</Anchors>
 				<Scripts>
@@ -94,7 +94,7 @@
 			<Button name="UnBotCommandButton3" inherits="UnBotCommandButtonTemplate" parent="UnBotFrame">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
-						<Offset> <AbsDimension y="-5" x="75"/> </Offset>
+						<Offset> <AbsDimension y="-5" x="55"/> </Offset>
 					</Anchor>
 				</Anchors>
 				<Scripts>
@@ -107,7 +107,7 @@
 			<Button name="UnBotCommandButton4" inherits="UnBotCommandButtonTemplate" parent="UnBotFrame">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
-						<Offset> <AbsDimension y="-5" x="110"/> </Offset>
+						<Offset> <AbsDimension y="-5" x="80"/> </Offset>
 					</Anchor>
 				</Anchors>
 				<Scripts>
@@ -120,7 +120,7 @@
 			<Button name="UnBotCommandButton5" inherits="UnBotCommandButtonTemplate" parent="UnBotFrame">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
-						<Offset> <AbsDimension y="-5" x="145"/> </Offset>
+						<Offset> <AbsDimension y="-5" x="105"/> </Offset>
 					</Anchor>
 				</Anchors>
 				<Scripts>
@@ -133,7 +133,7 @@
 			<Button name="UnBotCommandButton6" inherits="UnBotCommandButtonTemplate" parent="UnBotFrame">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
-						<Offset> <AbsDimension y="-5" x="180"/> </Offset>
+						<Offset> <AbsDimension y="-5" x="130"/> </Offset>
 					</Anchor>
 				</Anchors>
 				<Scripts>
@@ -146,7 +146,7 @@
 			<Button name="UnBotCommandButton7" inherits="UnBotCommandButtonTemplate" parent="UnBotFrame">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
-						<Offset> <AbsDimension y="-5" x="215"/> </Offset>
+						<Offset> <AbsDimension y="-5" x="155"/> </Offset>
 					</Anchor>
 				</Anchors>
 				<Scripts>
@@ -159,7 +159,7 @@
 			<Button name="UnBotCommandButton8" inherits="UnBotCommandButtonTemplate" parent="UnBotFrame">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
-						<Offset> <AbsDimension y="-5" x="250"/> </Offset>
+						<Offset> <AbsDimension y="-5" x="180"/> </Offset>
 					</Anchor>
 				</Anchors>
 				<Scripts>
@@ -172,7 +172,7 @@
 			<Button name="UnBotCommandButton9" inherits="UnBotCommandButtonTemplate" parent="UnBotFrame">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
-						<Offset> <AbsDimension y="-5" x="285"/> </Offset>
+						<Offset> <AbsDimension y="-5" x="205"/> </Offset>
 					</Anchor>
 				</Anchors>
 				<Scripts>
@@ -185,7 +185,7 @@
 			<Button name="UnBotCommandButton10" inherits="UnBotCommandButtonTemplate" parent="UnBotFrame">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
-						<Offset> <AbsDimension y="-5" x="320"/> </Offset>
+						<Offset> <AbsDimension y="-5" x="230"/> </Offset>
 					</Anchor>
 				</Anchors>
 				<Scripts>

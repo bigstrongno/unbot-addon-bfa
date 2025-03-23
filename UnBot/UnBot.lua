@@ -341,7 +341,7 @@ function CaseNormalWhisperMsg(name, info)
 end
 
 function SubCommandButton_OnLeftClick(index)
-	DisplayInfomation("xhf...SubCommandButton_OnLeftClick: "..UnitName("target"));
+	DisplayInfomation("xhf...SubCommandButton_OnLeftClick: "..index);
 	if (index > 0) then
 		if (UnBotExecuteCommand[index] == nil or UnBotExecuteCommand[index] == "") then
 			return;
