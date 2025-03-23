@@ -10,7 +10,7 @@
 
 ![](docs/display.png)
 
-添加指定职业机器人：
+添加指定职业机器人（已加入武僧、恶魔猎手，需配合bfacore带playerbot的服务端）：
 
 ![](docs/addclass.png)
 
