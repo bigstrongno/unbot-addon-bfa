@@ -1,4 +1,4 @@
-## UnBot for BfaCore 
+## UnBot for BfaCore wow 8.3.7
 
 一个基于 unbot-addon 修改的，适配 BfaCore（版本8.3.7） 的机器人控制插件，方便控制机器人（基于Playerbot mod）。
 
