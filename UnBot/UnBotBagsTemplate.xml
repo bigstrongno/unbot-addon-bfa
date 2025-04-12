@@ -7,7 +7,7 @@
 	</Button>
 	<CheckButton name="UnBotBagsTypeTemplate" checked="false" virtual="true">
 		<Size>
-		  <AbsDimension x="30" y="30" />
+		  <AbsDimension x="24" y="24" />
 		</Size>
 		<NormalTexture file="Interface\Buttons\UI-CheckBox-Up" />
 		<PushedTexture file="Interface\Buttons\UI-CheckBox-Down" />
@@ -73,11 +73,13 @@
 			</OnLoad>
 			<OnEvent>
 				if (event == "CHAT_MSG_WHISPER") then
-					if (UnBotCanFlushInfo(self) == true and arg2 == self.target) then
+					--DisplayInfomation("xhf。。。。。。。。。OnEvent,select(1,...): "..tostring(select(2,...).."--------"..self.target));
+					if (UnBotCanFlushInfo(self) == true and select(2,...) == self.target.."-BFA837") then
+						--DisplayInfomation("xhf。。。。。。。。。OnEvent,select(1,...): "..tostring(select(2,...)));
 						if (self.bagsType == 1) then
-							RecvOnceItemToBags(self, arg1);
+							RecvOnceItemToBags(self, select(1,...));
 						elseif (self.bagsType == 2) then
-							RecvMuchSpellToBags(self, arg1);
+							RecvMuchSpellToBags(self, select(1,...));
 						end
 					end
 				end

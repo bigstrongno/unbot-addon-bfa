@@ -20,7 +20,7 @@ function UnBotCanFlushInfo(bagsFrame)
 end
 
 function UnBotBagsHeadFrameSetFontText(rece, name, info)
-	local text = "|cff0000cc"..rece.."|r|cff00cccc"..name.."|r-|cffcccccc"..info.."|r";
+	local text = "|cffADFF2F"..rece.."|r  |cff00cccc"..name.."|r  - |cffcccccc"..info.."|r";
 	return text;
 end
 
@@ -49,8 +49,8 @@ local function CreateIconGroupByParent(fromParent,hheadGap,vheadGap,hnum,vnum,hg
 			iconsGroup[iconsIndex] = newFrame;
 			iconsIndex = iconsIndex + 1;
 			newFrame.countLabel = newFrame:CreateFontString(newFrame:GetName().."Count","OVERLAY");
-			newFrame.countLabel:SetFont([[Fonts\ZYHei.ttf]],12);
-			newFrame.countLabel:SetTextColor(0.8,0,0.8,1);
+			newFrame.countLabel:SetFont([[Fonts\ARHei.ttf]],12);
+			newFrame.countLabel:SetTextColor(0.9,0.9,0.9,1);
 			newFrame.countLabel:SetHeight(12);
 			newFrame.countLabel:SetText(" ");
 			newFrame.countLabel:SetPoint("BOTTOMRIGHT",newFrame,"BOTTOMRIGHT",-2,2);
@@ -165,10 +165,10 @@ local function CreateBagsTypeOptions(fromParent, checkedIndex)
 	end
 	local newFrame = CreateFrame("CheckButton",fromParent:GetName().."BagsType1",fromParent,"UnBotBagsTypeTemplate");
 	newFrame.title = newFrame:CreateFontString(newFrame:GetName().."Title","ARTWORK");
-	newFrame.title:SetFont([[Fonts\ZYHei.ttf]],20);
+	newFrame.title:SetFont([[Fonts\ARHei.ttf]],14);
 	newFrame.title:SetTextColor(1.0,0.8,0,1);
 	newFrame.title:SetText("查看");
-	newFrame.title:SetPoint("TOPLEFT",newFrame,"TOPRIGHT",2,-5);
+	newFrame.title:SetPoint("TOPLEFT",newFrame,"TOPRIGHT",2,-3);
 	newFrame.title:SetShadowColor(0,0,0);
 	newFrame.title:SetShadowOffset(1,-1);
 	newFrame:Show();
@@ -184,10 +184,10 @@ local function CreateBagsTypeOptions(fromParent, checkedIndex)
 	
 	newFrame = CreateFrame("CheckButton",fromParent:GetName().."BagsType2",fromParent,"UnBotBagsTypeTemplate");
 	newFrame.title = newFrame:CreateFontString(newFrame:GetName().."Title","ARTWORK");
-	newFrame.title:SetFont([[Fonts\ZYHei.ttf]],20);
+	newFrame.title:SetFont([[Fonts\ARHei.ttf]],14);
 	newFrame.title:SetTextColor(1.0,0.8,0,1);
 	newFrame.title:SetText("装备");
-	newFrame.title:SetPoint("TOPLEFT",newFrame,"TOPRIGHT",2,-5);
+	newFrame.title:SetPoint("TOPLEFT",newFrame,"TOPRIGHT",2,-4);
 	newFrame.title:SetShadowColor(0,0,0);
 	newFrame.title:SetShadowOffset(1,-1);
 	newFrame:Show();
@@ -203,10 +203,10 @@ local function CreateBagsTypeOptions(fromParent, checkedIndex)
 	
 	newFrame = CreateFrame("CheckButton",fromParent:GetName().."BagsType3",fromParent,"UnBotBagsTypeTemplate");
 	newFrame.title = newFrame:CreateFontString(newFrame:GetName().."Title","ARTWORK");
-	newFrame.title:SetFont([[Fonts\ZYHei.ttf]],20);
+	newFrame.title:SetFont([[Fonts\ARHei.ttf]],14);
 	newFrame.title:SetTextColor(1.0,0.8,0,1);
 	newFrame.title:SetText("丢弃");
-	newFrame.title:SetPoint("TOPLEFT",newFrame,"TOPRIGHT",2,-5);
+	newFrame.title:SetPoint("TOPLEFT",newFrame,"TOPRIGHT",2,-3);
 	newFrame.title:SetShadowColor(0,0,0);
 	newFrame.title:SetShadowOffset(1,-1);
 	newFrame:Show();
@@ -222,10 +222,10 @@ local function CreateBagsTypeOptions(fromParent, checkedIndex)
 	
 	newFrame = CreateFrame("CheckButton",fromParent:GetName().."BagsType4",fromParent,"UnBotBagsTypeTemplate");
 	newFrame.title = newFrame:CreateFontString(newFrame:GetName().."Title","ARTWORK");
-	newFrame.title:SetFont([[Fonts\ZYHei.ttf]],20);
+	newFrame.title:SetFont([[Fonts\ARHei.ttf]],14);
 	newFrame.title:SetTextColor(1.0,0.8,0,1);
 	newFrame.title:SetText("卖出");
-	newFrame.title:SetPoint("TOPLEFT",newFrame,"TOPRIGHT",2,-5);
+	newFrame.title:SetPoint("TOPLEFT",newFrame,"TOPRIGHT",2,-3);
 	newFrame.title:SetShadowColor(0,0,0);
 	newFrame.title:SetShadowOffset(1,-1);
 	newFrame:Show();
@@ -241,10 +241,10 @@ local function CreateBagsTypeOptions(fromParent, checkedIndex)
 	
 	newFrame = CreateFrame("CheckButton",fromParent:GetName().."BagsType5",fromParent,"UnBotBagsTypeTemplate");
 	newFrame.title = newFrame:CreateFontString(newFrame:GetName().."Title","ARTWORK");
-	newFrame.title:SetFont([[Fonts\ZYHei.ttf]],20);
+	newFrame.title:SetFont([[Fonts\ARHei.ttf]],14);
 	newFrame.title:SetTextColor(1.0,0.8,0,1);
 	newFrame.title:SetText("使用");
-	newFrame.title:SetPoint("TOPLEFT",newFrame,"TOPRIGHT",2,-5);
+	newFrame.title:SetPoint("TOPLEFT",newFrame,"TOPRIGHT",2,-4);
 	newFrame.title:SetShadowColor(0,0,0);
 	newFrame.title:SetShadowOffset(1,-1);
 	newFrame:Show();
@@ -278,7 +278,7 @@ local function CreateOptionByParent(fromParent,flushFunc)
 	end
 
 	fromParent.title = fromParent:CreateFontString(fromParent:GetName().."Title","ARTWORK");
-	fromParent.title:SetFont([[Fonts\ZYHei.ttf]],15);
+	fromParent.title:SetFont([[Fonts\ARHei.ttf]],14);
 	fromParent.title:SetTextColor(1.0,1.0,1.0,1);
 	fromParent.title:SetText(UnBotBagsHeadFrameSetFontText(fromParent.raceName, fromParent.target, fromParent.activeText));
 	fromParent.title:SetPoint("TOPLEFT",fromParent,"TOPLEFT",10,-8);
@@ -286,7 +286,7 @@ local function CreateOptionByParent(fromParent,flushFunc)
 	fromParent.title:SetShadowOffset(1,-1);
 
 	fromParent.page = fromParent:CreateFontString(fromParent:GetName().."Page","ARTWORK");
-	fromParent.page:SetFont([[Fonts\ZYHei.ttf]],15);
+	fromParent.page:SetFont([[Fonts\ARHei.ttf]],14);
 	fromParent.page:SetTextColor(1.0,1.0,1.0,1);
 	fromParent.page:SetText("0-0");
 	fromParent.page:SetPoint("CENTER",fromParent,"BOTTOMLEFT",90,22);
@@ -331,10 +331,10 @@ local function CreateOptionByParent(fromParent,flushFunc)
 	end);
 
 	local closeFrame = CreateFrame("Button","BGIconsFrame",fromParent,"UIPanelCloseButton");
-	closeFrame:SetWidth(40);
-	closeFrame:SetHeight(40);
+	closeFrame:SetWidth(32);
+	closeFrame:SetHeight(32);
 	closeFrame:Show();
-	closeFrame:SetPoint("TOPRIGHT", fromParent, "TOPRIGHT", 5, 5);
+	closeFrame:SetPoint("TOPRIGHT", fromParent, "TOPRIGHT", 0, 0);
 	closeFrame:SetScript("OnClick", function()
 		RemoveFromUnBotFrame(fromParent)
 		fromParent:Hide()
@@ -392,7 +392,23 @@ function CreateIconsByUnBotBagsFrame(checkedIndex, name,bagType,afterRemove,data
 	bagsFrame.activeText = activeText;
 	bagsFrame.flushFunc = flushFunc;
 	bagsFrame.getFunc = getFunc;
+	bagsFrame:SetMovable(true) -- make it movable
+	bagsFrame:EnableMouse(true) -- make it draggable
+	bagsFrame:SetScript("OnMouseDown", function(self, button) --move
+		if button == "LeftButton" then
+			bagsFrame:StartMoving()
+		end
+	end)
+	bagsFrame:SetScript("OnMouseUp", function(self, button) -- stop moving 
+		if button == "LeftButton" then
+			bagsFrame:StopMovingOrSizing()
+		end
+	end)
+	bagsFrame:SetScript("OnHide", function(self)
+		bagsFrame:StopMovingOrSizing()
+	end)
 	CreateOptionByParent(bagsFrame,flushFunc);
+	
 	if (bagType == 1) then
 		CreateBagsTypeOptions(bagsFrame, checkedIndex);
 	end
@@ -559,6 +575,7 @@ function GetItemCountByLink(info)
 end
 
 function RecvOnceItemToBags(bagsFrame,info)
+
 	if (bagsFrame == nil) then
 		return;
 	end

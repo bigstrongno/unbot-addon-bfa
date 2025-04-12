@@ -205,7 +205,22 @@
 					<OnLoad>
 						self.groupIndex = 0;
 						self.comIndex = 0;
+						self:SetMovable(true) -- make it movable
+						self:EnableMouse(true) -- make it draggable
 					</OnLoad>
+					<OnMouseDown>
+						if button == "LeftButton" then
+							UnBotFrame:StartMoving()
+						end
+					</OnMouseDown>
+					<OnMouseUp>
+						if button == "LeftButton" then
+							UnBotFrame:StopMovingOrSizing()
+						end
+					</OnMouseUp>
+					<OnHide>
+						UnBotFrame:StopMovingOrSizing()
+					</OnHide>
 					<OnShow>
 						self.showMenu = false;
 						self.Icon = self:CreateTexture("UnBotCommandButtonFuncIcon","BACKGROUND");
